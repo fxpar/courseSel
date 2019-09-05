@@ -1,10 +1,10 @@
 {
 
-  "description": "Ajoute un menu permettant de sélectionner, désélectionner les cours. Réalisé à partir d'une démo de firefox,
-  "manifest_version": 1,
-  "name": "CourseSelection",
-  "version": "1.0",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "description": "Permet de sélectionner, déselectionner et rechercher des cours dans une page d'administration Moodle.",
+  "manifest_version": 2,
+  "name": "CourseSel",
+  "version": "0.5",
+  "homepage_url": "https://github.com/fxpar/courseSel/",
   "icons": {
     "48": "icons/Moodle.png"
   },
@@ -20,9 +20,12 @@
         "dark": "icons/Moodle.png",
         "size": 32
     }],
-    "default_title": "CourseSelection",
+    "default_title": "CourseSel",
     "default_popup": "popup/choose_beast.html"
   },
 
+  "web_accessible_resources": [
+    "icons/*.jpg"
+  ]
 
 }
