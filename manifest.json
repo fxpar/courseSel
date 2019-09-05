@@ -1,0 +1,28 @@
+{
+
+  "description": "Ajoute un menu permettant de sélectionner, désélectionner les cours. Réalisé à partir d'une démo de firefox,
+  "manifest_version": 1,
+  "name": "CourseSelection",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "icons": {
+    "48": "icons/Moodle.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/Moodle.png",
+    "theme_icons": [{
+        "light": "icons/Moodle.png",
+        "dark": "icons/Moodle.png",
+        "size": 32
+    }],
+    "default_title": "CourseSelection",
+    "default_popup": "popup/choose_beast.html"
+  },
+
+
+}
