@@ -5,7 +5,7 @@ Firefox addon to select, deselect and search courses in an admin Moodle page
 
 Created from the "your second extension" by the mozilla teaching team, called "beastify"... hence all the filenames with "beast".
 
-![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-Screenshot.png)
+![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-Screenshot.png) ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-screenshot-en.png)
 
 !! C'est un prototype!
 
