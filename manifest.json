@@ -1,12 +1,13 @@
 {
 
-  "description": "Permet de sélectionner, déselectionner et rechercher des cours dans une page d'administration Moodle.",
+  "description": "__MSG_extensionDescription__",
   "manifest_version": 2,
-  "name": "CourseSel",
+  "name": "__MSG_extensionName__",
   "version": "0.5",
   "homepage_url": "https://github.com/fxpar/courseSel/",
+  "default_locale": "fr",
   "icons": {
-    "48": "icons/Moodle.png"
+    "48": "icons/Moodle48.png"
   },
 
   "permissions": [
@@ -14,14 +15,14 @@
   ],
 
   "browser_action": {
-    "default_icon": "icons/Moodle.png",
+    "default_icon": "icons/Moodle32.png",
     "theme_icons": [{
-        "light": "icons/Moodle.png",
-        "dark": "icons/Moodle.png",
+        "light": "icons/Moodle32.png",
+        "dark": "icons/Moodle32.png",
         "size": 32
     }],
     "default_title": "CourseSel",
-    "default_popup": "popup/choose_beast.html"
+    "default_popup": "popup/course_selection.html"
   },
 
   "web_accessible_resources": [

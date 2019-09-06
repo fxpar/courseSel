@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="course_selection.css"/>
+  </head>
+
+<body>
+  <div id="popup-content">
+    <div id="tout" class="button beast" data-message="selectionnerButtonText">Selectionner</div>
+    <div id="deselectionner" class="button beast" data-message="déselectionnerButtonText">Déselectionner tout</div>
+    <div id="inverser" class="button beast" data-message="inverserButtonText">Inverser la sélection</div>
+	<fieldset>
+	 <legend data-message="chercherFormatFieldsetLegend">Format a trou</legend>
+	<input id="searchValue" type="text" name="ok" value="MSCBD-....01.-.."/>
+    <div id="chercher" for="searchValue" class="button beast" title="les points sont des jokers" data-message="chercherFormatButtonText">rechercher ce format</div>
+	</fieldset>
+	<fieldset>
+	 <legend data-message="chercherListeFieldsetLegend">Liste d'identifiants</legend>
+	<textarea id="searchList" type="text" name="searchList" value="un numéro par ligne" rows="5">MSCBD-MAR5011-50&#10;MSCBD-FON3012-10&#10;MSCBD-MEN3013-40</textarea>
+	<div id="chercherListe" for="searchList" class="button beast" title="un numéro par ligne" data-message="chercherListeButtonText">rechercher cette liste</div>
+	</fieldset>
+	<div id="tester" class="button beast hidden" >tester</div>
+    <div id="reset" class="button reset hidden">Reset</div>
+  </div>
+  <div id="error-content" class="hidden" data-message="errorContent">
+    <p>Can't beastify this web page.</p><p>Try a different page.</p>
+  </div>
+  <script src="course_selection.js"></script>
+</body>
+
+</html>

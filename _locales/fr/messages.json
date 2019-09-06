@@ -1,0 +1,65 @@
+{
+  "extensionName": {
+    "message": "CoursSel",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Permet de sélectionner, déselectionner, inverser la sélection dans un page d'administration des cours Moodle.",
+    "description": "Description of the extension."
+  },
+  
+   "selectionnerButtonText": {
+    "message": "Sélectionner Tout",
+    "description": "Title of the click notification."
+  }, 
+
+
+   "déselectionnerButtonText": {
+    "message": "Désélectionner tout",
+    "description": "Title of the click notification."
+  }, 
+
+   "inverserButtonText": {
+    "message": "Inverser la sélection",
+    "description": "Title of the click notification."
+  }, 
+
+   "chercherFormatFieldsetLegend": {
+    "message": "Format à trou",
+    "description": "Title of the click notification."
+  }, 
+
+  "chercherFormatButtonText": {
+    "message": "chercher ce schéma",
+    "description": "Title of the click notification."
+  }, 
+
+
+   "chercherListeFieldsetLegend": {
+    "message": "Liste d'identifiants",
+    "description": "Title of the click notification."
+  }, 
+  
+   "chercherListeButtonText": {
+    "message": "Chercher dans cette liste",
+    "description": "Title of the click notification."
+  }, 
+   
+
+  "errorContent": {
+    "message": "<p>Impossibled de sélectionner les cours.</p><p>Essayez une autre page.</p>",
+    "description": "Title of the click notification."
+  },
+
+  "notificationContent": {
+    "message": "You clicked $URL$.",
+    "description": "Tells the user which link they clicked.",
+    "placeholders": {
+      "url" : {
+        "content" : "$1",
+        "example" : "https://developer.mozilla.org"
+      }
+    }
+  }
+}
