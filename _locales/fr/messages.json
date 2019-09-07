@@ -9,19 +9,87 @@
     "description": "Description of the extension."
   },
   
+  
+     "touteLaPageFieldsetLegend": {
+    "message": "Sur toute la page",
+    "description": "Title of the click notification."
+  }, 
+  
+     "seulementCoursFieldsetLegend": {
+    "message": "Seulement les cours",
+    "description": "Title of the click notification."
+  }, 
+  
+  
+  
    "selectionnerButtonText": {
-    "message": "Sélectionner Tout",
+    "message": "☑ Cocher",
     "description": "Title of the click notification."
   }, 
 
+   "selectionnerPageButtonTitle": {
+    "message": "cocher toutes les cases de la page",
+    "description": "Title of the click notification."
+  }, 
+  
+     "selectionnerCoursButtonTitle": {
+    "message": "cocher toutes les cases de cours",
+    "description": "Title of the click notification."
+  }, 
 
-   "déselectionnerButtonText": {
-    "message": "Désélectionner tout",
+   "deselectionnerButtonText": {
+    "message": "☐ Décocher",
+    "description": "Title of the click notification."
+  }, 
+
+     "deselectionnerPageButtonTitle": {
+    "message": "Décocher toutes les cases de la page",
+    "description": "Title of the click notification."
+  }, 
+  
+  
+     "deselectionnerCoursButtonTitle": {
+    "message": "Décocher toutes les cases de cours",
     "description": "Title of the click notification."
   }, 
 
    "inverserButtonText": {
-    "message": "Inverser la sélection",
+    "message": "⇄ Inverser",
+    "description": "Title of the click notification."
+  }, 
+
+     "inverserPageButtonTitle": {
+    "message": "Inverser coché / décoché de toute la page",
+    "description": "Title of the click notification."
+  }, 
+  
+       "inverserCoursButtonTitle": {
+    "message": "Inverser les cours: coché / décoché",
+    "description": "Title of the click notification."
+  }, 
+  
+   "autreFieldsetLegend": {
+    "message": "Autre",
+    "description": "Title of the click notification."
+  }, 
+
+   "dechoisirButtonText": {
+    "message": "🔘 décocher",
+    "description": "Title of the click notification."
+  }, 
+  
+     "dechoisirButtonTitle": {
+    "message": "dé-choisir l'option (ronde) sélectionnée",
+    "description": "Title of the click notification."
+  }, 
+  
+     "afficherButtonText": {
+    "message": "afficher toutes les cases à cocher",
+    "description": "Title of the click notification."
+  }, 
+
+    "afficherElButtonText": {
+    "message": "afficher toutes les éléments",
     "description": "Title of the click notification."
   }, 
 
@@ -45,10 +113,21 @@
     "message": "Chercher dans cette liste",
     "description": "Title of the click notification."
   }, 
+  
+     "tableauDBordFieldsetLegend": {
+    "message": "Tableau de bord",
+    "description": "Title of the click notification."
+  }, 
+   
+
+     "afficherCodesButtonText": {
+    "message": "Afficher les codes",
+    "description": "Title of the click notification."
+  }, 
    
 
   "errorContent": {
-    "message": "<p>Impossibled de sélectionner les cours.</p><p>Essayez une autre page.</p>",
+    "message": "Impossibled de sélectionner les cours. Essayez une autre page.",
     "description": "Title of the click notification."
   },
 

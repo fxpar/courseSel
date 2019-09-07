@@ -8,19 +8,86 @@
     "message": "Allows to select, deselect, inverse selection of courses in a Moodle administration page."
   },
   
+  
+  
+     "touteLaPageFieldsetLegend": {
+    "message": "On the whole page",
+    "description": "Title of the click notification."
+  }, 
+  
+     "seulementCoursFieldsetLegend": {
+    "message": "Only courses",
+    "description": "Title of the click notification."
+  }, 
+  
+  
    "selectionnerButtonText": {
-    "message": "Select all",
+    "message": "☑ check",
     "description": "Title of the click notification."
   }, 
 
+   "selectionnerPageButtonTitle": {
+    "message": "check all checkboxes of the page",
+    "description": "Title of the click notification."
+  }, 
 
-   "déselectionnerButtonText": {
-    "message": "Unselect all",
+   "selectionnerCoursButtonTitle": {
+    "message": "check all course checkboxes",
+    "description": "Title of the click notification."
+  }, 
+
+   "deselectionnerButtonText": {
+    "message": "☐ uncheck",
+    "description": "Title of the click notification."
+  }, 
+  
+     "deselectionnerPageButtonTitle": {
+    "message": "Uncheck all checkboxes of the page",
+    "description": "Title of the click notification."
+  }, 
+  
+       "deselectionnerCoursButtonTitle": {
+    "message": "Uncheck all course checkboxes",
     "description": "Title of the click notification."
   }, 
 
    "inverserButtonText": {
-    "message": "Reverse selection",
+    "message": "⇄ inverse",
+    "description": "Title of the click notification."
+  }, 
+  
+     "inverserPageButtonTitle": {
+    "message": "Inverse checked/unchecked on whole page",
+    "description": "Title of the click notification."
+  }, 
+  
+       "inverserCoursButtonTitle": {
+    "message": "Inverse courses: checked/unchecked",
+    "description": "Title of the click notification."
+  }, 
+  
+   "autreFieldsetLegend": {
+    "message": "Other",
+    "description": "Title of the click notification."
+  }, 
+
+   "dechoisirButtonText": {
+    "message": "🔘 unchoose",
+    "description": "Title of the click notification."
+  },   
+  
+    "dechoisirButtonTitle": {
+    "message": "uncheck current clicked option (useful for round options)",
+    "description": "Title of the click notification."
+  },   
+ 
+    "afficherButtonText": {
+    "message": "display all checkboxes",
+    "description": "Title of the click notification."
+  }, 
+  
+     "afficherElButtonText": {
+    "message": "display all elements",
     "description": "Title of the click notification."
   }, 
 
@@ -44,8 +111,21 @@
     "description": "Title of the click notification."
   }, 
 
+     "tableauDBordFieldsetLegend": {
+    "message": "Dashboard",
+    "description": "Title of the click notification."
+  }, 
+   
+
+     "afficherCodesButtonText": {
+    "message": "Display codes",
+    "description": "Title of the click notification."
+  }, 
+   
+
+
   "errorContent": {
-    "message": "<p>Can't select courses on this web page.</p><p>Try a different page.</p>",
+    "message": "Can't select courses on this web page. Try a different page.",
     "description": "Title of the click notification."
   },
   

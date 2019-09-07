@@ -1,5 +1,5 @@
 html, body {
-  width: 250px;
+  width: 300px;
 }
 
 .hidden {
@@ -7,10 +7,12 @@ html, body {
 }
 
 .button {
+	display:inline-block;
   margin: 3% auto;
   padding: 4px;
   text-align: center;
   cursor: pointer;
+  /*margin-right:5% !important;*/
 }
 
 .beast:hover {
@@ -28,3 +30,5 @@ html, body {
 .reset:hover {
   background-color: #EAEA9D;
 }
+
+.debug {display: none;}

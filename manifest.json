@@ -3,9 +3,9 @@
   "description": "__MSG_extensionDescription__",
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
-  "version": "0.5",
+  "version": "0.7",
   "homepage_url": "https://github.com/fxpar/courseSel/",
-  "default_locale": "fr",
+  "default_locale": "en",
   "icons": {
     "48": "icons/Moodle48.png"
   },

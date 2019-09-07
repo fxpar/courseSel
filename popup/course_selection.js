@@ -14,27 +14,70 @@ function listenForClicks() {
 
 
 		switch (e.target.id) {
-			case "tout":
+			
+			case "selectionnerPage":
 			  browser.tabs.executeScript(tabs[0].id, {
-			  code: `console.log("*****TOUT");document.getElementsByName('bc[]').forEach(function (element ,index) {element.checked = true;});`
+			  code: `console.log("*****COCHER PAGE"); var n =0; document.querySelectorAll('input[type=checkbox]').forEach(function (element ,index) {element.checked = true; n++;}); console.log(n+' cases cochées'); `
 			});
 			break;
+			
+			case "deselectionnerPage":
+			  browser.tabs.executeScript(tabs[0].id, {
+			  code: `console.log("*****DECOCHER PAGE"); var n =0; document.querySelectorAll('input[type=checkbox]').forEach(function (element ,index) {element.checked = false; n++;}); console.log(n+' cases décochées');`
+			});
+			break;
+			
+			case "inverserPage":
+			  browser.tabs.executeScript(tabs[0].id, {
+			  code: `console.log("*****INVERSER PAGE"); var n =0; document.querySelectorAll('input[type=checkbox]').forEach(function (element ,index) {element.click(); n++;}); console.log(n+' cases inversées');`
+			});
+			break;
+			
+			case "selectionnerCours":
+			  browser.tabs.executeScript(tabs[0].id, {
+			  code: `console.log("*****COCHER COURS"); var n =0; document.getElementsByName('bc[]').forEach(function (element ,index) {element.checked = true; n++;}); console.log(n+' cases cochées'); `
+			});
+			break;
+
+			case "deselectionnerCours":
+			   browser.tabs.executeScript(tabs[0].id, {
+			  code: `console.log("*****DECOCHER COURS"); var n =0; document.getElementsByName('bc[]').forEach(function (element ,index) {element.checked = false; n++;}); console.log(n+' cases décochées');`
+			});
+			break;
+
+			case "inverserCours":
+			   browser.tabs.executeScript(tabs[0].id, {
+			  code: `console.log("*****INVERSER COURS"); var n = 0; document.getElementsByName('bc[]').forEach(function (element ,index) {element.click(); n++;}); console.log(n+' cases inversées');`
+			});
+			break;
+			
+			
+			case "dechoisir":
+			   browser.tabs.executeScript(tabs[0].id, {
+			  code: `console.log("*****DECHOISIR OPTION RONDE ACTIVE"); var n = 0; document.activeElement.checked = false; console.log(n+' une option dé-choisie');`
+			});
+			break;
+			
+			
+			case "afficher":
+			  browser.tabs.executeScript(tabs[0].id, {
+			  code: `console.log("*****INVERSER PAGE"); var n =0; document.querySelectorAll('input').forEach(function (element ,index) {element.style.display = 'block';element.style.visibility = 'visible'; n++;}); console.log(n+' cases affichées');`
+			});
+			break;
+			
+			case "afficherEl":
+			  browser.tabs.executeScript(tabs[0].id, {
+			  code: `console.log("*****INVERSER PAGE"); var n =0; document.querySelectorAll('body *').forEach(function (element ,index) {element.style.display = 'block';element.style.visibility = 'visible'; n++;}); console.log(n+' élément affichés');`
+			});
+			break;
+			
+			
 			case "chercher":
 			   browser.tabs.executeScript(tabs[0].id, {
 			  code: `console.log("*****CHERCHER"); var n =0; document.getElementsByName('bc[]').forEach(function (element ,index) {if (element.parentElement.nextSibling.nextSibling.firstChild.innerHTML.match(/^(`+searchValue+`)$/)){n++; console.log(element.parentElement.nextSibling.nextSibling.firstChild.innerHTML);element.click();} }); console.log(n+' cours cliqués'); `
 			});
 			break;
-			case "inverser":
-			   browser.tabs.executeScript(tabs[0].id, {
-			  code: `console.log("*****INVERSER"); var n = 0; document.getElementsByName('bc[]').forEach(function (element ,index) {element.click();});`
-			});
-			break;
-			case "deselectionner":
-			   browser.tabs.executeScript(tabs[0].id, {
-			  code: `console.log("*****DESELECTIONNER"); document.getElementsByName('bc[]').forEach(function (element ,index) {element.checked = false;});`
-			});
-			break;
-				case "chercherListe":
+			case "chercherListe":
 				var splitted = searchList.split(/\r?\n/);
 				var chercherListe =`console.log("*****CHERCHER LISTE"); var n =0;`;
 				for (i = 0; i < splitted.length; i++) {
@@ -44,6 +87,14 @@ function listenForClicks() {
 			  code: chercherListe
 			});
 			break;
+			
+			case "afficherCodes":
+			  browser.tabs.executeScript(tabs[0].id, {
+			  code: `console.log("*****AFFICHER CODES"); var n =0; document.querySelectorAll('.course-shortname').forEach(function (element ,index) {element.style.display = 'inline-block'; n++;}); console.log(n+' codes affichés');`
+			});
+			break;
+			
+			
 			case "tester":
 			  alert("ok");
 			break;
@@ -101,11 +152,15 @@ function reportExecuteScriptError(error) {
 }
 
 function internationalizePopup(){
-
+	console.log("***** I18N POPUP ****");
 	  var objects = document.getElementsByTagName('*'), i;
   for(i = 0; i < objects.length; i++) {
     if (objects[i].dataset && objects[i].dataset.message) {
-      objects[i].innerHTML = browser.i18n.getMessage(objects[i].dataset.message);
+      objects[i].innerText = browser.i18n.getMessage(objects[i].dataset.message);
+    }
+	if (objects[i].dataset && objects[i].dataset.title) {
+		console.log("TITLE:"+objects[i].dataset.title);
+      objects[i].setAttribute("title", browser.i18n.getMessage(objects[i].dataset.title)) ;
     }
   }
 	
