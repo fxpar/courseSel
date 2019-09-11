@@ -9,6 +9,10 @@
     "description": "Description of the extension."
   },
   
+    "lang": {
+    "message": "en",
+    "description": "Description of the extension."
+  },
   
      "touteLaPageFieldsetLegend": {
     "message": "Sur toute la page",
@@ -31,6 +35,25 @@
     "message": "cocher toutes les cases de la page",
     "description": "Title of the click notification."
   }, 
+  
+  
+  
+     "selectionnerPageAlert": {
+    "message": "n+' cases ont été cochées\\n'+c+' étaient déja cochées\\n'+d+' étaient décochées\\n'+t+' au total' ",
+    "description": "Title of the click notification."
+  }, 
+  
+  
+     "consulterConsoleAlert": {
+    "message": "consultez la console pour plus de détails",
+    "description": "Title of the click notification."
+  }, 
+  
+       "aucunCoursAlert": {
+    "message": "Aucun cours trouvé\\nDésolé...😢",
+    "description": "Title of the click notification."
+  }, 
+  
   
      "selectionnerCoursButtonTitle": {
     "message": "cocher toutes les cases de cours",
@@ -122,6 +145,28 @@
 
      "afficherCodesButtonText": {
     "message": "Afficher les codes",
+    "description": "Title of the click notification."
+  }, 
+  
+
+
+    "copierButtonText": {
+    "message": "Mémoriser",
+    "description": "Title of the click notification."
+  }, 
+   
+       "copierButtonTitle": {
+    "message": "Copier les cours du tableau de bord",
+    "description": "Title of the click notification."
+  }, 
+   
+    "cocherButtonText": {
+    "message": "Cocher",
+    "description": "Title of the click notification."
+  }, 
+   
+    "cocherButtonTitle": {
+    "message": "Cocher les cours du tableau de bords d'après la liste copiée",
     "description": "Title of the click notification."
   }, 
    

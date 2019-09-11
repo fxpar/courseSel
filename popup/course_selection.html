@@ -36,13 +36,16 @@
 	
 	<fieldset>
 		 <legend data-message="chercherListeFieldsetLegend">Liste d'identifiants</legend>
-		<textarea id="searchList" type="text" name="searchList" value="un numéro par ligne" rows="5">MSCBD-MAR5011-50&#10;MSCBD-FON3012-10&#10;MSCBD-MEN3013-40</textarea>
+		<textarea id="searchList" type="text" name="searchList" value="un numéro par ligne" rows="4">MSCBD-MAR5011-50&#10;MSCBD-FON3012-10&#10;MSCBD-MEN3013-40</textarea>
 		<div id="chercherListe" for="searchList" class="button beast" title="un numéro par ligne" data-message="chercherListeButtonText">rechercher cette liste</div>
 	</fieldset>
 	
 	<fieldset>
 		<legend data-message="tableauDBordFieldsetLegend"></legend>
-		<div id="afficherCodes" for="searchList" class="button beast"  data-message="afficherCodesButtonText">Afficher les codes</div>
+		
+		<div id="afficherCodes" class="button beast"  data-message="copierButtonText" data-title="copierButtonTitle">Copier et afficher</div>
+		
+		<div id="cocherCodes" class="button beast"  data-message="cocherButtonText" data-title="cocherButtonTitle">Cocher</div>
 	</fieldset>
 	
 	<div id="tester" class="button beast debug" >tester</div>

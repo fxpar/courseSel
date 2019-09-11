@@ -8,7 +8,10 @@
     "message": "Allows to select, deselect, inverse selection of courses in a Moodle administration page."
   },
   
-  
+     "lang": {
+    "message": "en",
+    "description": "Description of the extension."
+  },
   
      "touteLaPageFieldsetLegend": {
     "message": "On the whole page",
@@ -26,6 +29,27 @@
     "description": "Title of the click notification."
   }, 
 
+   "selectionnerPageAlert": {
+    "message": "cocher toutes les cases de la page",
+    "description": "Title of the click notification."
+  }, 
+
+     "selectionnerPageAlert": {
+    "message": "n+' boxes have been ticked\\n'+c+' were already ticked\\n'+d+' were unticked\\n'+t+' = total\\n\\n(check console for detail)' ",
+    "description": "Title of the click notification."
+  }, 
+  
+  
+   "consulterConsoleAlert": {
+    "message": "check console for details",
+    "description": "Title of the click notification."
+  }, 
+  
+     "aucunCoursAlert": {
+    "message": "No course found\\nSorry...😢",
+    "description": "Title of the click notification."
+  }, 
+  
    "selectionnerPageButtonTitle": {
     "message": "check all checkboxes of the page",
     "description": "Title of the click notification."
@@ -122,6 +146,27 @@
     "description": "Title of the click notification."
   }, 
    
+    "copierButtonText": {
+    "message": "Copy",
+    "description": "Title of the click notification."
+  }, 
+  
+    "copierButtonTitle": {
+    "message": "Copy and display course codes from dashboard",
+    "description": "Title of the click notification."
+  },   
+   
+    "cocherButtonText": {
+    "message": "Click",
+    "description": "Title of the click notification."
+  }, 
+   
+    "cocherButtonTitle": {
+    "message": "Click the courses from copied list",
+    "description": "Title of the click notification."
+  }, 
+  
+
 
 
   "errorContent": {
