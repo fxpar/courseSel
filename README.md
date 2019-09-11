@@ -7,7 +7,7 @@ Available on Mozilla at https://addons.mozilla.org/firefox/addon/coursesel/
 
 Created from the "your second extension" by the mozilla teaching team, called "beastify"... hence all the filenames with "beast".
 
-![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-v8screenshotEN.png)
+![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-v8screenshotEN.png) ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-v8screenshotFR.png)
 
 !! C'est un prototype!
 
