@@ -1,16 +1,32 @@
 
 
+function initialize(){
+	
+		if (localStorage.getItem("searchValue") == null){
+				var searchValue = document.getElementById("searchValue").value;
+				//console.log("locastorage searchvalue = null");
+		}else{
+				//console.log("locastorage searchvalue ="+localStorage.getItem("searchValue"));
+				var searchValue = localStorage.getItem("searchValue");
+				document.getElementById("searchValue").value = searchValue;
+		}
+
+		if (localStorage.getItem("searchList") == null){
+				var searchList = document.getElementById("searchList").value;
+				//console.log("locastorage searchList = null");
+		}else{
+				//console.log("locastorage searchList ="+localStorage.getItem("searchList"));
+				var searchList = localStorage.getItem("searchList");
+				document.getElementById("searchList").value = searchList;
+		}		
+}
+
 function listenForClicks() {
   document.addEventListener("click", (e) => {
 
 
+
     function courseActions(tabs) {
-		//document.body.style.border = "5px solid red";
-		//alert(e.target.id);
-		var searchValue = document.getElementById("searchValue").value;
-		var searchList = document.getElementById("searchList").value;
-		//alert(searchValue);
-		//alert("searchValue"+document.getElementById("searchValue").value);
 
 
 		switch (e.target.id) {
@@ -85,21 +101,26 @@ function listenForClicks() {
 			
 			case "chercher":
 			var myAlert = browser.i18n.getMessage("cocherAlert");
+			localStorage.setItem("searchValue", document.getElementById("searchValue").value);
+			searchValue = localStorage.getItem("searchValue");
 			   browser.tabs.executeScript(tabs[0].id, {
 			  code: `console.log("*****🐳🐳🐳CHERCHER"); var n =0; var c = 0; var d = 0; t= 0; document.getElementsByName('bc[]').forEach(function (element ,index) {if (element.checked == true) {t++; c++;}else{d++;t++;} if (element.parentElement.nextSibling.nextSibling.firstChild.innerHTML.match(/^(`+searchValue+`)$/)){n++; console.log(element.parentElement.nextSibling.nextSibling.firstChild.innerHTML);element.click();} });  console.log('**ALERT**\\n'+`+myAlert+`); window.alert(`+myAlert+`);`
 			});
 			break;
 			case "chercherListe":
-			var myAlert = browser.i18n.getMessage("cocherAlert");
+			var myAlert = browser.i18n.getMessage("chercherListeAlert");
+			localStorage.setItem("searchList", document.getElementById("searchList").value);
+			searchList = localStorage.getItem("searchList");
 				var splitted = searchList.split(/\r?\n/);
-				var chercherListe =`console.log("*****🦀🦀🦀🦀CHERCHER LISTE"); var n =0; var c = 0; var d = 0; t= 0;`;
+				var chercherListe =`console.log("*****🦀🦀🦀🦀CHERCHER LISTE"); var n =`+splitted.length+`; var tr = 0; var ntr = n; var c = 0; var d = 0; t= document.getElementsByName('bc[]').length;`;
 				for (i = 0; i < splitted.length; i++) {
-					chercherListe += `document.getElementsByName('bc[]').forEach(function (element ,index) {if (element.checked == true) {t++; c++;}else{d++;t++;} if (element.parentElement.nextSibling.nextSibling.firstChild.innerHTML.match(/^(`+splitted[i]+`)$/)){n++; console.log(element.parentElement.nextSibling.nextSibling.firstChild.innerHTML);element.click();} }); console.log(n+' cours cliqués'); `
+					chercherListe += `document.getElementsByName('bc[]').forEach(function (element ,index) {if (element.parentElement.nextSibling.nextSibling.firstChild.innerHTML.match(/^(`+splitted[i]+`)$/)){tr++;ntr--; if (element.checked == true) { c++;}else{d++;} console.log(element.parentElement.nextSibling.nextSibling.firstChild.innerHTML);element.click();} }); console.log(n+' cours cliqués'); `
 				}
 				chercherListe +=`window.alert(`+myAlert+`);`;
 			   browser.tabs.executeScript(tabs[0].id, {
 			  code: chercherListe
 			});
+			
 			break;
 			
 			case "afficherCodes":
@@ -110,9 +131,9 @@ function listenForClicks() {
 			break;
 			
 			case "cocherCodes":
-			var myAlert = browser.i18n.getMessage("cocherAlert");
+			var myAlert = browser.i18n.getMessage("chercherListeAlert");
 			var checkConsole = browser.i18n.getMessage("consulterConsoleAlert");
-				var chercherListe =`console.log("*****COCHER CODES DEPUIS LISTE ENREGISTREE"); var n =0; var c = 0; var d = 0; t= 0; console.log(JSON.parse(localStorage.getItem("dashCourses"))); var dashCourses = JSON.parse(localStorage.getItem("dashCourses"));if (dashCourses == null) {window.alert('`+browser.i18n.getMessage("aucunCoursAlert")+`');} else{ for (i = 0; i < dashCourses.length; i++) { document.getElementsByName('bc[]').forEach(function (element ,index) { if (element.parentElement.nextSibling.nextSibling.firstChild.innerHTML==(dashCourses[i])){n++; if (element.checked == true) {t++; c++;}else{d++;t++;} console.log(element.parentElement.nextSibling.nextSibling.firstChild.innerHTML);element.click();} });} console.log(n+' cours cliqués'); console.log("***DASHCOURSES***");console.log(dashCourses);  console.log('**ALERT**\\n'+`+myAlert+`); window.alert(`+myAlert+`+'\\n\\n(`+checkConsole+`)');}`;
+				var chercherListe =`console.log("*****COCHER CODES DEPUIS LISTE ENREGISTREE"); var n =0; var tr = 0; var ntr = 0; var c = 0; var d = 0; t= 0; console.log(JSON.parse(localStorage.getItem("dashCourses"))); var dashCourses = JSON.parse(localStorage.getItem("dashCourses"));if (dashCourses == null) {window.alert('`+browser.i18n.getMessage("aucunCoursAlert")+`');} else{ntr = dashCourses.length; for (i = 0; i < dashCourses.length; i++) { document.getElementsByName('bc[]').forEach(function (element ,index) { if (element.parentElement.nextSibling.nextSibling.firstChild.innerHTML==(dashCourses[i])){n++; tr++;ntr--; if (element.checked == true) { c++;}else{d++;} console.log(element.parentElement.nextSibling.nextSibling.firstChild.innerHTML);element.click();} });} console.log(n+' cours cliqués'); n= dashCourses.length; t =  document.getElementsByName('bc[]').length;  console.log("***DASHCOURSES***");console.log(dashCourses);  console.log('**ALERT**\\n'+`+myAlert+`); window.alert(`+myAlert+`+'\\n\\n(`+checkConsole+`)');}`;
 			  browser.tabs.executeScript(tabs[0].id, {
 			  code: chercherListe
 			});
@@ -193,6 +214,7 @@ function internationalizePopup(){
 
 try{
 //internationalizePopup();
+initialize();
 listenForClicks();
 }
 catch(error){

@@ -35,8 +35,13 @@
     "description": "Title of the click notification."
   }, 
   
+         "chercherListeAlert": {
+    "message": "n+' codes ont été cherchés\\n'+tr+'  trouvé(s)\\n'+ntr+' non trouvé(s)\\n-----\\n'+c+' étaient cochées\\n'+d+'  décochées\\n'+t+' au total' ",
+    "description": "Title of the click notification."
+  }, 
+  
          "afficherAlert": {
-    "message": "n+' cours ont été affiché et mémorisés' ",
+    "message": "n+' cours ont été affiché(s) et mémorisé(s)' ",
     "description": "Title of the click notification."
   }, 
   
