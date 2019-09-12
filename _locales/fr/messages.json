@@ -10,36 +10,33 @@
   },
   
     "lang": {
-    "message": "en",
+    "message": "fr",
     "description": "Description of the extension."
   },
   
-     "touteLaPageFieldsetLegend": {
-    "message": "Sur toute la page",
-    "description": "Title of the click notification."
-  }, 
-  
-     "seulementCoursFieldsetLegend": {
-    "message": "Seulement les cours",
-    "description": "Title of the click notification."
-  }, 
-  
-  
-  
-   "selectionnerButtonText": {
-    "message": "☑ Cocher",
-    "description": "Title of the click notification."
-  }, 
 
-   "selectionnerPageButtonTitle": {
-    "message": "cocher toutes les cases de la page",
+  
+
+  
+  
+  
+     "cocherAlert": {
+    "message": "n+' cases ont été cochées\\n'+c+' étaient déja cochées\\n'+d+' étaient décochées\\n'+t+' au total' ",
     "description": "Title of the click notification."
   }, 
   
+       "décocherAlert": {
+    "message": "n+' cases ont été décochées\\n'+c+' étaient déja cochées\\n'+d+' étaient décochées\\n'+t+' au total' ",
+    "description": "Title of the click notification."
+  }, 
   
+       "inverserAlert": {
+    "message": "n+' cases ont été inversées\\n'+c+' étaient déja cochées\\n'+d+' étaient décochées\\n'+t+' au total' ",
+    "description": "Title of the click notification."
+  }, 
   
-     "selectionnerPageAlert": {
-    "message": "n+' cases ont été cochées\\n'+c+' étaient déja cochées\\n'+d+' étaient décochées\\n'+t+' au total' ",
+         "afficherAlert": {
+    "message": "n+' cours ont été affiché et mémorisés' ",
     "description": "Title of the click notification."
   }, 
   
@@ -52,138 +49,15 @@
        "aucunCoursAlert": {
     "message": "Aucun cours trouvé\\nDésolé...😢",
     "description": "Title of the click notification."
-  }, 
-  
-  
-     "selectionnerCoursButtonTitle": {
-    "message": "cocher toutes les cases de cours",
-    "description": "Title of the click notification."
-  }, 
-
-   "deselectionnerButtonText": {
-    "message": "☐ Décocher",
-    "description": "Title of the click notification."
-  }, 
-
-     "deselectionnerPageButtonTitle": {
-    "message": "Décocher toutes les cases de la page",
-    "description": "Title of the click notification."
-  }, 
-  
-  
-     "deselectionnerCoursButtonTitle": {
-    "message": "Décocher toutes les cases de cours",
-    "description": "Title of the click notification."
-  }, 
-
-   "inverserButtonText": {
-    "message": "⇄ Inverser",
-    "description": "Title of the click notification."
-  }, 
-
-     "inverserPageButtonTitle": {
-    "message": "Inverser coché / décoché de toute la page",
-    "description": "Title of the click notification."
-  }, 
-  
-       "inverserCoursButtonTitle": {
-    "message": "Inverser les cours: coché / décoché",
-    "description": "Title of the click notification."
-  }, 
-  
-   "autreFieldsetLegend": {
-    "message": "Autre",
-    "description": "Title of the click notification."
-  }, 
-
-   "dechoisirButtonText": {
-    "message": "🔘 décocher",
-    "description": "Title of the click notification."
-  }, 
-  
-     "dechoisirButtonTitle": {
-    "message": "dé-choisir l'option (ronde) sélectionnée",
-    "description": "Title of the click notification."
-  }, 
-  
-     "afficherButtonText": {
-    "message": "afficher toutes les cases à cocher",
-    "description": "Title of the click notification."
-  }, 
-
-    "afficherElButtonText": {
-    "message": "afficher toutes les éléments",
-    "description": "Title of the click notification."
-  }, 
-
-   "chercherFormatFieldsetLegend": {
-    "message": "Format à trou",
-    "description": "Title of the click notification."
-  }, 
-
-  "chercherFormatButtonText": {
-    "message": "chercher ce schéma",
-    "description": "Title of the click notification."
-  }, 
-
-
-   "chercherListeFieldsetLegend": {
-    "message": "Liste d'identifiants",
-    "description": "Title of the click notification."
-  }, 
-  
-   "chercherListeButtonText": {
-    "message": "Chercher dans cette liste",
-    "description": "Title of the click notification."
-  }, 
-  
-     "tableauDBordFieldsetLegend": {
-    "message": "Tableau de bord",
-    "description": "Title of the click notification."
-  }, 
-   
-
-     "afficherCodesButtonText": {
-    "message": "Afficher les codes",
-    "description": "Title of the click notification."
-  }, 
-  
-
-
-    "copierButtonText": {
-    "message": "Mémoriser",
-    "description": "Title of the click notification."
-  }, 
-   
-       "copierButtonTitle": {
-    "message": "Copier les cours du tableau de bord",
-    "description": "Title of the click notification."
-  }, 
-   
-    "cocherButtonText": {
-    "message": "Cocher",
-    "description": "Title of the click notification."
-  }, 
-   
-    "cocherButtonTitle": {
-    "message": "Cocher les cours du tableau de bords d'après la liste copiée",
-    "description": "Title of the click notification."
-  }, 
-   
-
-  "errorContent": {
-    "message": "Impossibled de sélectionner les cours. Essayez une autre page.",
-    "description": "Title of the click notification."
-  },
-
-  "notificationContent": {
-    "message": "You clicked $URL$.",
-    "description": "Tells the user which link they clicked.",
-    "placeholders": {
-      "url" : {
-        "content" : "$1",
-        "example" : "https://developer.mozilla.org"
-      }
-    }
   }
+  
+
+
+  
+
+ 
+
+
+
+
 }
