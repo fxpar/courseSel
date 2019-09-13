@@ -13,11 +13,10 @@ Created from the "your second extension" by the mozilla teaching team, called "b
 
 # Installation
 
-1. Télécharger le fichier zip
-1. Dans firefox, ouvrir les modules complémentaires
-1. cliquer sur la roue dentelée et choisir "debugger"
-1. Puis "installer depuis un fichier"
-1. Choisir le fichier zip
+1. https://addons.mozilla.org/firefox/addon/coursesel/
+1. Install
+
+On mobile or tablet, the menu has its own page...
 
 
 # Old Screenshot 
