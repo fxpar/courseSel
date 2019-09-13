@@ -7,7 +7,7 @@ Available on Mozilla at https://addons.mozilla.org/firefox/addon/coursesel/
 
 Created from the "your second extension" by the mozilla teaching team, called "beastify"... hence all the filenames with "beast".
 
-![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-v8screenshotEN.png) ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-v8screenshotFR.png)
+![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/__screenshots/courseSel-v8screenshotEN.png) ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/__screenshots/courseSel-v8screenshotFR.png)
 
 !! C'est un prototype!
 
@@ -23,4 +23,9 @@ Created from the "your second extension" by the mozilla teaching team, called "b
 # Old Screenshot 
 from previous versions
 
- ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-Screenshot.png) ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/courseSel-screenshot-en.png)
+## v0.9
+
+![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/__screenshots/courseSel-v8screenshotEN.png) ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/__screenshots/courseSel-v8screenshotFR.png)
+
+## v0.8
+ ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/__screenshots/courseSel-Screenshot.png) ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/__screenshots/courseSel-screenshot-en.png)
