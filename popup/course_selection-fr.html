@@ -1,62 +1,92 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="course_selection.css"/>
-  </head>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="course_selection.css"/>
+	</head>
 
-<body>
-  <div id="popup-content">
-	
-	<fieldset>
-		<legend>Toutes les cases de la page</legend>
-		<div id="selectionnerPage" class="button"  title="cocher toutes les cases de la page">☑ Cocher</div>
-		<div id="deselectionnerPage" class="button" title="Décocher toutes les cases de la page">☐ Décocher</div>
-		<div id="inverserPage" class="button"  title="Inverser coché / décoché de toute la page">⇄ Inverser</div>
-	</fieldset>
-	<fieldset>
-		<legend >Seulement les cases de cours</legend>
-		<div id="selectionnerCours" class="button "  title="cocher toutes les cases de cours">☑ Cocher</div>
-		<div id="deselectionnerCours" class="button "  title="Décocher toutes les cases de cours">☐ Décocher</div>
-		<div id="inverserCours" class="button "  title="Inverser les cours: coché / décoché">⇄ Inverser</div>
-	</fieldset>
-	<fieldset>
-		 <legend >Format a trou</legend>
-		<input id="searchValue" type="text" name="ok" value="MSCBD-....01.-.."/>
-		<div id="chercher" for="searchValue" class="button " title="les points sont des jokers" >Chercher</div>
-	</fieldset>
-	
+	<body>
+		<div id="popup-content">
+			<div class="rowtitle">Toutes les cases de la page</div>
+			<div class="row">
 
-	
-	<fieldset>
-		 <legend >Liste d'identifiants</legend>
-		<textarea id="searchList" type="text" name="searchList" value="un numéro par ligne" rows="4">MSCBD-MAR5011-50&#10;MSCBD-FON3012-10&#10;MSCBD-MEN3013-40</textarea>
-		<div id="chercherListe" for="searchList" class="button " title="un numéro par ligne (évitez les espaces en fin de ligne)" >Chercher</div>
-	</fieldset>
-	
-	<fieldset>
-		<legend >Tableau de bord</legend>
-		
-		<div id="afficherCodes" class="button "   title="Afficher et mémoriser les codes d'un tableau de bord">Copier</div>
-		
-		<div id="cocherCodes" class="button " title="Cocher les cours d'après une liste de cours mémorisés depuis un tableau de bord">Cocher</div>
-	</fieldset>
-	
-		<fieldset>
-		<legend >Autres</legend>
-		<div id="dechoisir" for="searchValue" class="button "   title="dé-choisir l'option (ronde) sélectionnée">🔘 décocher</div>
-		<div id="afficher" for="searchValue" class="button  debug"  >afficher toutes les cases</div>
-		<div id="afficherEl" for="searchValue" class="button  debug"  >afficher tous les éléments</div>
-	</fieldset>
-	
-	<div id="tester" class="button  debug" >tester</div>
-    <div id="reset" class="button reset debug">Reset</div>
-  </div>
-  <div id="error-content" class="hidden" >
-    <p>Impossibled de sélectionner les cours.</p><p>Essayez une autre page.</p>
-  </div>
-  <script src="course_selection.js"></script>
-</body>
+				<div id="selectionnerPage" class="button"  title="cocher toutes les cases de la page">☑ Cocher</div>
+				<div id="deselectionnerPage" class="button" title="Décocher toutes les cases de la page">☐ Décocher</div>
+				<div id="inverserPage" class="button"  title="Inverser coché / décoché de toute la page">⇄ Inverser</div>
+			</div>	
+
+
+			<div class="rowtitle">Seulement les cases de cours</div>
+			<div class="row">
+
+				<div id="selectionnerCours" class="button "  title="cocher toutes les cases de cours">☑ Cocher</div>
+				<div id="deselectionnerCours" class="button "  title="Décocher toutes les cases de cours">☐ Décocher</div>
+				<div id="inverserCours" class="button "  title="Inverser les cours: coché / décoché">⇄ Inverser</div>
+			</div>	
+
+
+
+			<div class="rowtitle">Format à trou</div>
+			<div class="row">
+				<input id="searchValue" type="text" name="ok" value="MSCBD-....01.-.."/>
+				<div id="chercher" for="searchValue" class="button " title="les points sont des jokers" >Chercher</div>
+
+			</div>	
+
+
+
+
+			<div class="rowtitle">Liste d'identifiants</div>
+			<div class="row">
+				<textarea id="searchList" type="text" name="searchList" value="un numéro par ligne" rows="3">MSCBD-MAR5011-50&#10;MSCBD-FON3012-10&#10;MSCBD-MEN3013-40</textarea>
+				<div id="chercherListe" for="searchList" class="button " title="un numéro par ligne (évitez les espaces en fin de ligne)" >Chercher</div>
+
+			</div>	
+
+
+
+			<div class="rowtitle">Tableau de bord</div>
+			<div class="row">
+				<div id="afficherCodes" class="button "   title="Afficher et mémoriser les codes d'un tableau de bord">Copier</div>
+
+				<div id="cocherCodes" class="button " title="Cocher les cours d'après une liste de cours mémorisés depuis un tableau de bord">Cocher</div>
+
+			</div>	
+
+
+
+			<div class="rowtitle">Autres</div>
+			<div class="row">
+				<div id="dechoisir" for="searchValue" class="button "   title="dé-choisir l'option (ronde) sélectionnée">🔘 décocher</div>
+				<div id="afficher" for="searchValue" class="button  debug"  >afficher toutes les cases</div>
+				<div id="afficherEl" for="searchValue" class="button  debug"  >afficher tous les éléments</div>
+
+			</div>	
+
+
+
+			<div class="rowtitle debug">Debug</div>
+			<div class="row debug">
+				<div id="tester" class="button  debug" >tester</div>
+				<div id="reset" class="button reset debug">Reset</div>
+
+			</div>	
+
+
+
+
+
+
+
+		</div>
+
+
+		<div id="error-content" class="hidden" >
+			<p>Impossibled de sélectionner les cours.</p><p>Essayez une autre page.</p>
+		</div>
+		<script src="course_selection.js"></script>
+	</body>
 
 </html>

@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="course_selection.css"/>
-  </head>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" href="course_selection.css"/>
+	</head>
 
-<body>
-  <div id="popup-content">
-	
-	<fieldset>
-		<legend >All the checkboxes from the page</legend>
-		<div id="selectionnerPage" class="button " title="check all checkboxes of the page" >☑ check</div>
-		<div id="deselectionnerPage" class="button "  title="Uncheck all checkboxes of the page" >☐ uncheck</div>
-		<div id="inverserPage" class="button "  title="Inverse checked/unchecked on whole page">⇄ inverse</div>
-	</fieldset>
-	
-	<fieldset>
-		<legend >Only course checkboxes</legend>
-		<div id="selectionnerCours" class="button "  title="check all course checkboxes">☑ check</div>
-		<div id="deselectionnerCours" class="button "  title="Uncheck all course checkboxes">☐ uncheck</div>
-		<div id="inverserCours" class="button "  title="Inverse courses: checked/unchecked">⇄ inverse</div>
-	</fieldset>
-	
-	<fieldset>
-		 <legend >Gap format search</legend>
-		<input id="searchValue" type="text" name="ok" value="MSCBD-....01.-.."/>
-		<div id="chercher" for="searchValue" class="button " title="dots are placeholders (jokers)" >search</div>
-	</fieldset>
-	
+	<body>
+		<div id="popup-content">
 
-	
-	<fieldset>
-		 <legend >Code list search</legend>
-		<textarea id="searchList" type="text" name="searchList"  rows="4">MSCBD-MAR5011-50&#10;MSCBD-FON3012-10&#10;MSCBD-MEN3013-40</textarea>
-		<div id="chercherListe" for="searchList" class="button " title="one id per row (avoid spaces at the end of lines)" >search</div>
-	</fieldset>
-	
-	<fieldset>
-		<legend >Dashboard</legend>
-		
-		<div id="afficherCodes" class="button "  title="Copy and display course codes from dashboard">Memorise</div>
-		
-		<div id="cocherCodes" class="button "   title="Click the courses from memorized list">Tick</div>
-	</fieldset>
-	
-		<fieldset>
-		<legend >Other</legend>
-		<div id="dechoisir" for="searchValue" class="button "   title="uncheck current clicked option (useful for round options)">🔘 unchoose</div>
-		<div id="afficher" for="searchValue" class="button  debug"  >display all checkboxes</div>
-		<div id="afficherEl" for="searchValue" class="button  debug"  >display all elements</div>
-	</fieldset>
-	
-	<div id="tester" class="button  debug" >tester</div>
-    <div id="reset" class="button reset debug">Reset</div>
-  </div>
-  <div id="error-content" class="hidden" >
-    <p>Can't select courses on this web page.</p><p>Try a different page.</p>
-  </div>
-  <script src="course_selection.js"></script>
-</body>
+			<div class="rowtitle">All the checkboxes from the page</div>
+			<div class="row">
+				<div id="selectionnerPage" class="button " title="check all checkboxes of the page" >☑ check</div>
+				<div id="deselectionnerPage" class="button "  title="Uncheck all checkboxes of the page" >☐ uncheck</div>
+				<div id="inverserPage" class="button "  title="Inverse checked/unchecked on whole page">⇄ inverse</div>
+
+			</div>	
+
+
+			<div class="rowtitle">Only course checkboxes</div>
+			<div class="row">
+				<div id="selectionnerCours" class="button "  title="check all course checkboxes">☑ check</div>
+				<div id="deselectionnerCours" class="button "  title="Uncheck all course checkboxes">☐ uncheck</div>
+				<div id="inverserCours" class="button "  title="Inverse courses: checked/unchecked">⇄ inverse</div>
+
+			</div>	
+
+			<div class="rowtitle">Template search</div>
+			<div class="row">
+				<input id="searchValue" type="text" name="ok" value="MSCBD-....01.-.."/>
+				<div id="chercher" for="searchValue" class="button " title="dots are placeholders (jokers)" >search</div>
+
+			</div>	
+
+			<div class="rowtitle">Code list search</div>
+			<div class="row">
+				<textarea id="searchList" type="text" name="searchList"  rows="4">MSCBD-MAR5011-50&#10;MSCBD-FON3012-10&#10;MSCBD-MEN3013-40</textarea>
+				<div id="chercherListe" for="searchList" class="button " title="one id per row (avoid spaces at the end of lines)" >search</div>
+
+			</div>	
+
+			<div class="rowtitle">Dashboard</div>
+			<div class="row">
+				<div id="afficherCodes" class="button "  title="Copy and display course codes from dashboard">Memorise</div>
+
+				<div id="cocherCodes" class="button "   title="Click the courses from memorized list">Tick</div>
+
+			</div>		
+
+			<div class="rowtitle">Other</div>
+			<div class="row">
+				<div id="dechoisir" for="searchValue" class="button "   title="uncheck current clicked option (useful for round options)">🔘 unchoose</div>
+				<div id="afficher" for="searchValue" class="button  debug"  >display all checkboxes</div>
+				<div id="afficherEl" for="searchValue" class="button  debug"  >display all elements</div>
+
+			</div>	
+
+			<div class="rowtitle debug">Debug</div>
+			<div class="row debug">
+				<div id="tester" class="button  debug" >tester</div>
+				<div id="reset" class="button reset debug">Reset</div>
+
+			</div>		
+
+
+		</div>
+		<div id="error-content" class="hidden" >
+			<p>Can't select courses on this web page.</p><p>Try a different page.</p>
+		</div>
+		<script src="course_selection.js"></script>
+	</body>
 
 </html>
