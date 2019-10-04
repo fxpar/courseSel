@@ -5,6 +5,8 @@ Available on Mozilla at https://addons.mozilla.org/firefox/addon/coursesel/
 
 ![shield](https://img.shields.io/badge/firefox-moodle-orange)
 
+(the same extension has been developped for Google Chrome at: https://github.com/fxpar/courseSel-chrome)
+
 Created from the "your second extension" by the mozilla teaching team, called "beastify"... hence all the filenames with "beast".
 
 ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/__screenshots/courseSel-v1.1-screenshotEN.png) ![Screenshot de courseSel](https://github.com/fxpar/courseSel/blob/master/__screenshots/courseSel-v1.1-screenshotFR.png)
